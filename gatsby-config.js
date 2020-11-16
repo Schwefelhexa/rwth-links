@@ -35,6 +35,7 @@ module.exports = {
         ]
       }
     },
+    `gatsby-transformer-yaml`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
