@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby.JS`,
-    description: `Gatsby Markdown Personal Website Starter, using Typescript, Styled Components, Tailwindcss and Framer Motion.`,
-    author: `Saimir Kapaj`
+    title: `RWTH Ersti Links`,
+    description: `Links für alle ZOOM-Meetings an der RWTH`,
+    author: `Alexander Baron`
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -37,20 +37,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-personal-website-starter`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#81e6d9`,
-        theme_color: `#81e6d9`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`
-      }
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-tailwindcss`,
     {
