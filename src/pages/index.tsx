@@ -8,8 +8,8 @@ interface Data {
   allModulesYaml: {
     nodes: {
       name: string;
-      parent: {
-        name: string;
+      fields: {
+        slug: string;
       };
     }[];
   };
@@ -20,7 +20,7 @@ const IndexPage: React.FC<{ data: Data }> = ({ data }) => (
     <h1 className="text-4xl font-bold text-primary leading-none mb-5">Erstis Informatik</h1>
     <AnimateInList>
       {data.allModulesYaml.nodes.map((module) => (
-        <Link key={module.parent.name} to={`module/${module.parent.name}`}>
+        <Link key={module.fields.slug} to={module.fields.slug}>
           {module.name}
         </Link>
       ))}
@@ -34,10 +34,8 @@ export const query = graphql`
     allModulesYaml {
       nodes {
         name
-        parent {
-          ... on File {
-            name
-          }
+        fields {
+          slug
         }
       }
     }
