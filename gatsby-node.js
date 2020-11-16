@@ -31,8 +31,6 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  console.log(result);
-
   result.data.allModulesYaml.nodes.forEach(({ fields }) => {
     createPage({
       path: fields.slug,

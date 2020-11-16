@@ -16,7 +16,9 @@ const AnimateInList: React.FC<Props> = ({ children }) => {
   return (
     <>
       {trail.map((props, i) => (
-        <animated.div style={props}>{children[i]}</animated.div>
+        <animated.div key={i} style={props}>
+          {children[i]}
+        </animated.div>
       ))}
     </>
   );
