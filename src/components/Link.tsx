@@ -6,7 +6,7 @@ interface Props {
   children: React.ReactNode;
 }
 const Link: React.FC<Props> = ({ to, children }) => (
-  <GatsbyLink to={to} className="text-2xl font-semibold text-primary underline">
+  <GatsbyLink to={to} className="text-2xl lg:text-3xl lg:leading-relaxed font-semibold text-primary underline">
     {children}
   </GatsbyLink>
 );

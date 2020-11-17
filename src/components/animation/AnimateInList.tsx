@@ -7,7 +7,7 @@ interface Props {
 const AnimateInList: React.FC<Props> = ({ children }) => {
   const trail = useTrail(children.length, {
     from: {
-      transform: 'translateX(-100vw)'
+      transform: 'translateX(-40rem)'
     },
     transform: 'translateX(0vw)',
     config: config.stiff

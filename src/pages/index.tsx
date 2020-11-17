@@ -1,4 +1,5 @@
 import AnimateInList from 'components/animation/AnimateInList';
+import Header from 'components/Header';
 import Layout from 'components/Layout';
 import Link from 'components/Link';
 import { graphql, PageProps } from 'gatsby';
@@ -17,7 +18,7 @@ interface Data {
 
 const IndexPage: React.FC<PageProps & { data: Data }> = ({ location, data }) => (
   <Layout context={{ location }}>
-    <h1 className="text-4xl font-bold text-primary leading-none mb-5">Erstis Informatik</h1>
+    <Header>Erstis Informatik</Header>
     <AnimateInList>
       {data.allModulesYaml.nodes.map((module) => (
         <Link key={module.fields.slug} to={module.fields.slug}>
