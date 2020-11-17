@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ['src/**/*.tsx', 'src/**/*.css'],
   theme: {
     extend: {},
     colors: {
