@@ -12,15 +12,15 @@ interface Props {
 const Layout: React.FC<Props> = ({ context, children }) => {
   const breakpoint = useBreakpoint();
   return (
-    <div className="w-full min-h-screen relative overflow-hidden">
-      <div className="absolute left-0 bottom-0">
+    <div className="w-full min-h-screen relative overflow-hidden z-0">
+      <div className="fixed left-0 bottom-0 z-20 pointer-events-none">
         {context.location.pathname !== '/' && context.location.pathname !== '' && (
-          <Link to="/" className="block mx-6 my-6 lg:mx-10 lg:my-10">
+          <Link to="/" className="block ml-6 mb-6 lg:ml-10 lg:mb-10 pointer-events-auto">
             <House size={breakpoint('lg') ? 64 : 42} weight="fill" color={config.theme.colors.primary} />
           </Link>
         )}
       </div>
-      <div className="w-full h-full px-6 py-6 lg:px-10 lg:py-10">{children}</div>
+      <div className="w-full h-full px-6 py-6 lg:px-10 lg:py-10 z-10">{children}</div>
     </div>
   );
 };
