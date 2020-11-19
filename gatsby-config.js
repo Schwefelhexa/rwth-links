@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `RWTH Ersti Links`,
-    description: `Links für alle ZOOM-Meetings an der RWTH`,
+    description: `Links für alle Informatik Ersti-ZOOM-Meetings an der RWTH`,
     author: `Alexander Baron`
   },
   plugins: [

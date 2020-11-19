@@ -3,7 +3,7 @@ import { Link, PageProps } from 'gatsby';
 import { House } from 'phosphor-react';
 
 import useBreakpoint from 'core/hooks/useBreakpoint';
-import config from '../../tailwind.config';
+import config from '../../../tailwind.config';
 
 interface Props {
   context: Pick<PageProps, 'location'>;
