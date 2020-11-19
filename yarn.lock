@@ -10479,10 +10479,10 @@ phin@^2.9.1:
   resolved "https://registry.yarnpkg.com/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
   integrity sha512-CzFr90qM24ju5f88quFC/6qohjC144rehe5n6DH900lgXmUe86+xCKc10ev56gRKC4/BkHUoG4uSiQgBiIXwDA==
 
-phosphor-react@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.0.0.tgz#8d46a3a81ad9fc8bf6e3dd9d33920a8888fbd663"
-  integrity sha512-JT6xJDFS3Mkk6DoyLIqLGdtXfuPktHbBj2McLrrnlksNkMDePT4AzNDCUUxmRAHRlbFDZudX0DKHM7DwqMZf+A==
+phosphor-react@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.0.1.tgz#612a42ba632344b3e9bb7a9b7f5bfbaa24990bf7"
+  integrity sha512-iBHJGkjq9An9e2A+ye8K4TBi1iUWwvkqWocg8hG57SQgCWzdPClY6/akvkDKbknbmQklQCpchfKATAMMfVQtpQ==
 
 physical-cpu-count@^2.0.0:
   version "2.0.0"
