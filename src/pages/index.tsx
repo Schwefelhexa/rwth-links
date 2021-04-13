@@ -17,8 +17,8 @@ interface Data {
 }
 
 const IndexPage: React.FC<PageProps & { data: Data }> = ({ location, data }) => (
-  <Layout title="RWTH Informatik Ersti-Links" context={{ location }}>
-    <Header>Erstis Informatik</Header>
+  <Layout title="RWTH Informatik Links" context={{ location }}>
+    <Header>Informatik</Header>
     <AnimateInList>
       {data.allModulesYaml.nodes.map((module) => (
         <Link key={module.fields.slug} to={module.fields.slug}>
